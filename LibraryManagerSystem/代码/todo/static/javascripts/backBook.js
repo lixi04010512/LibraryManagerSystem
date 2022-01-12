@@ -1,0 +1,11 @@
+$("#backBook").click(function(){
+    $.ajax({
+        type:"POST",
+        url:"todo/deleteborrow",
+        data:{"book_name":$("#roleName").val(),"user_name":$("#roleNames").val()},
+        success:function(){
+            alert("归还成功！");
+            window.location="./First.html";
+        }
+    })
+})

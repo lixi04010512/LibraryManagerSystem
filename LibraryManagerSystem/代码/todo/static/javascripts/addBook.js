@@ -1,0 +1,11 @@
+$('#addBook').click(function(){
+    $.ajax({
+        type:"POST",
+        url:"todo/insertbook",
+        data:{"book_name":$("#roleName").val(),"book_author":$("#roleAuthor").val(),"book_price":$("#rolePrice").val(),"book_total":$("#roleTotal").val(),"book_position":$("#rolePosition").val()},
+        success:function(){
+            alert("添加成功！");
+            window.location="./books.html"
+        }
+    })
+})

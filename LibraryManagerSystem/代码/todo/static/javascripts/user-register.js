@@ -1,0 +1,11 @@
+$('#regbtn').click(function(){
+    $.ajax({
+        type:"POST",
+        url:"todo/insertuser",
+        data:{"user_name":$("#register-username").val(),"user_password":$("#register-password").val()},
+        success:function(){
+            alert("注册成功！");
+            window.location="./user-login.html"
+        }
+    })
+})

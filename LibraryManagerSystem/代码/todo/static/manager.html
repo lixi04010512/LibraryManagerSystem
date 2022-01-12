@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="res/css/amazeui.min.css">
+		<link rel="stylesheet" href="res/css/admin.css">
+	</head>
+
+	<body>
+
+		<div class="admin-content-body">
+			<div class="am-cf am-padding am-padding-bottom-0">
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">管理员管理</strong><small></small></div>
+			</div>
+
+			<hr>
+
+			<div class="am-g">
+				<div class="am-u-sm-12 am-u-md-3">
+					<div class="am-input-group am-input-group-sm">
+						<input id="roleId" class="am-form-field" placeholder="请输入管理员姓名" type="text">
+						<span class="am-input-group-btn">
+					<button class="am-btn am-btn-default" type="button" id="btnsearch">搜索</button> 
+				       </span>
+					</div>
+				</div>
+			</div>
+
+			<div class="am-g" style="margin-top: 5px;">
+				<div class="am-u-sm-12">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th>
+										管理员id
+									</th>
+									<th>
+										管理员名称
+									</th>
+									<th class="table-title">
+										管理员密码
+									</th>
+
+									<th class="table-set">
+										操作
+									</th>
+								</tr>
+							</thead>
+							<tbody id="tUser">
+								
+							</tbody>
+						</table>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="myplugs/js/plugs.js"></script>
+		<script src="javascripts/manager.js"></script>
+	</body>
+
+</html>
